@@ -1,0 +1,21 @@
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.csproj.AssemblyReference.cache
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.frmMain.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmNoteList.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmOldStickyNote.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmEnterPassword.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmStickyNote.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\kysToolDemo.KysTools.KYSTextBox.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Note.resources
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.csproj.GenerateResource.cache
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.csproj.CoreCompileInputs.cache
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.exe.config
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.exe.manifest
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.application
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.exe
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.pdb
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.TrustInfo.xml
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.exe.manifest
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.application
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.exe
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.pdb
+C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\StickyNote.Properties.Resources.resources

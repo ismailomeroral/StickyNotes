@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedNotes", "EncryptedNotes\EncryptedNotes.csproj", "{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FE5DE49-A49E-48C4-808F-6137DE0CF8EB}
+	EndGlobalSection
+EndGlobal
