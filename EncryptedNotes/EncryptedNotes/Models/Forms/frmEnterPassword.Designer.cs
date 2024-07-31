@@ -46,7 +46,6 @@
             this.pnlEnterPassword.Controls.Add(this.btnEnterPassword);
             this.pnlEnterPassword.Controls.Add(this.txtEnterPassword);
             this.pnlEnterPassword.Controls.Add(this.lblEnterPassword);
-            this.pnlEnterPassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEnterPassword.Location = new System.Drawing.Point(0, 0);
             this.pnlEnterPassword.Name = "pnlEnterPassword";
             this.pnlEnterPassword.Size = new System.Drawing.Size(302, 121);
@@ -58,17 +57,14 @@
             this.pnlBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBar.Location = new System.Drawing.Point(0, 0);
             this.pnlBar.Name = "pnlBar";
-            this.pnlBar.Size = new System.Drawing.Size(302, 30);
+            this.pnlBar.Size = new System.Drawing.Size(302, 28);
             this.pnlBar.TabIndex = 0;
-            this.pnlBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseDown);
-            this.pnlBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseMove);
-            this.pnlBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseUp);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = global::StickyNote.Properties.Resources.miCLose;
-            this.btnClose.Location = new System.Drawing.Point(277, 5);
+            this.btnClose.Location = new System.Drawing.Point(278, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 20);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +85,7 @@
             this.btnEnterPassword.FlatAppearance.BorderSize = 0;
             this.btnEnterPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnterPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEnterPassword.Location = new System.Drawing.Point(220, 68);
+            this.btnEnterPassword.Location = new System.Drawing.Point(222, 64);
             this.btnEnterPassword.Name = "btnEnterPassword";
             this.btnEnterPassword.Size = new System.Drawing.Size(64, 40);
             this.btnEnterPassword.TabIndex = 4;
@@ -107,7 +103,7 @@
             this.txtEnterPassword.BorderSize = 2;
             this.txtEnterPassword.Font = new System.Drawing.Font("Yu Gothic", 11.25F);
             this.txtEnterPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtEnterPassword.Location = new System.Drawing.Point(13, 69);
+            this.txtEnterPassword.Location = new System.Drawing.Point(15, 65);
             this.txtEnterPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtEnterPassword.MultiLine = false;
             this.txtEnterPassword.Name = "txtEnterPassword";
@@ -124,7 +120,7 @@
             // 
             this.lblEnterPassword.AutoSize = true;
             this.lblEnterPassword.ForeColor = System.Drawing.Color.White;
-            this.lblEnterPassword.Location = new System.Drawing.Point(9, 44);
+            this.lblEnterPassword.Location = new System.Drawing.Point(11, 40);
             this.lblEnterPassword.Name = "lblEnterPassword";
             this.lblEnterPassword.Size = new System.Drawing.Size(53, 13);
             this.lblEnterPassword.TabIndex = 1;
@@ -134,9 +130,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(302, 121);
+            this.ClientSize = new System.Drawing.Size(300, 120);
             this.Controls.Add(this.pnlEnterPassword);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(300, 120);
+            this.MinimumSize = new System.Drawing.Size(300, 120);
             this.Name = "frmEnterPassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPasswordEnter";

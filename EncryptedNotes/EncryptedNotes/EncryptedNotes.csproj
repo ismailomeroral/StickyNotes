@@ -95,7 +95,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\DicInfo.cs" />
+    <Compile Include="Models\DirInfo.cs" />
     <Compile Include="Models\Forms\frmNoteList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +157,7 @@
     <Compile Include="ViewModels\NoteOperations.cs" />
     <Compile Include="ViewModels\RunningWindowsController.cs" />
     <Compile Include="ViewModels\StickyTextOperations.cs" />
+    <Compile Include="ViewModels\StyleEvents\FormMovedEvents.cs" />
     <Compile Include="ViewModels\StyleEvents\StyleEvent.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

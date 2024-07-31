@@ -13,18 +13,18 @@ namespace EncryptedNotes
         {
             InitializeComponent();
             RunningWindowsController.NewOpenedWindow(this);
-            NoteOperations.ToCreateList(pnlNote);
+            NoteOperations.CreateList(pnlNote);
         }
         
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            NoteOperations.ToListSearch(pnlNote, txtSearch.Text);
+            NoteOperations.Search(pnlNote, txtSearch.Text);
         }
         private void button2_Click(object sender, EventArgs e)
         {
             if (txtCreateNote.Text != "" && !txtCreateNote.Text.Contains(" "))
             {
-                NoteOperations.AddNotes(txtCreateNote.Text, pnlNote);
+                NoteOperations.AddNote(txtCreateNote.Text, pnlNote);
                 pnlCreateNote.Visible = false;
                 txtCreateNote.Text = "";
                 lblCreateNoteName.ForeColor = Color.Black;

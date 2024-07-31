@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NoteCMS = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.changeNoteNameToolStripMenuItem = new System.Windows.Forms.ToolStripTextBox();
             this.DeleteNoteCMSItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlBody = new System.Windows.Forms.Panel();
             this.btnNoteSettings = new System.Windows.Forms.PictureBox();
             this.lblNoteName = new System.Windows.Forms.Label();
-            this.changeNoteNameToolStripMenuItem = new System.Windows.Forms.ToolStripTextBox();
             this.NoteCMS.SuspendLayout();
             this.pnlBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnNoteSettings)).BeginInit();
@@ -61,6 +61,14 @@
             this.NoteCMS.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.NoteCMS.Size = new System.Drawing.Size(241, 51);
             // 
+            // changeNoteNameToolStripMenuItem
+            // 
+            this.changeNoteNameToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.changeNoteNameToolStripMenuItem.Name = "changeNoteNameToolStripMenuItem";
+            this.changeNoteNameToolStripMenuItem.Size = new System.Drawing.Size(180, 23);
+            this.changeNoteNameToolStripMenuItem.Text = "Change Note Name";
+            this.changeNoteNameToolStripMenuItem.TextChanged += new System.EventHandler(this.changeNoteNameToolStripMenuItem_TextChanged);
+            // 
             // DeleteNoteCMSItem
             // 
             this.DeleteNoteCMSItem.Name = "DeleteNoteCMSItem";
@@ -85,6 +93,7 @@
             // 
             this.btnNoteSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNoteSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnNoteSettings.Image = global::StickyNote.Properties.Resources.DotMenu;
             this.btnNoteSettings.Location = new System.Drawing.Point(234, 7);
             this.btnNoteSettings.Name = "btnNoteSettings";
             this.btnNoteSettings.Size = new System.Drawing.Size(25, 25);
@@ -108,13 +117,6 @@
             this.lblNoteName.DoubleClick += new System.EventHandler(this.Note_Click);
             this.lblNoteName.MouseEnter += new System.EventHandler(this.note_MouseEnter);
             this.lblNoteName.MouseLeave += new System.EventHandler(this.note_MouseLeave);
-            // 
-            // changeNoteNameToolStripMenuItem
-            // 
-            this.changeNoteNameToolStripMenuItem.Name = "changeNoteNameToolStripMenuItem";
-            this.changeNoteNameToolStripMenuItem.Size = new System.Drawing.Size(180, 23);
-            this.changeNoteNameToolStripMenuItem.Text = "Change Note Name";
-            this.changeNoteNameToolStripMenuItem.TextChanged += new System.EventHandler(this.changeNoteNameToolStripMenuItem_TextChanged);
             // 
             // Note
             // 

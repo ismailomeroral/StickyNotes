@@ -11,10 +11,22 @@ namespace EncryptedNotes.ViewModels
 {
     static internal class NoteOperations
     {
+        /// <Summary>
+        /// Notların listesini tutar.
+        /// </Summary>
         public static List<Note> notes = new List<Note>();
+
+        /// <Summary>
+        /// İlk notun y eksenindeki başlangıç pozisyonunu belirler.
+        /// </Summary>
         static int firstNoteY = 20;
 
-        public static void ToCreateList(Panel selectPanel)
+
+        /// <Summary>
+        /// Panel içindeki notları temizler ve veri tabanından gelen notları oluşturup listeye ekler.
+        /// </Summary>
+        /// <param name="selectPanel">Notların yerleştirileceği panel.</param>
+        public static void CreateList(Panel selectPanel)
         {
             notes.Clear();
             foreach (var item in DataOperations.ToList())
@@ -33,20 +45,32 @@ namespace EncryptedNotes.ViewModels
                     notes.Add(note);
                 }
             }
-            ToListControls(selectPanel, ToList());
+            ListToControls(selectPanel, ToList());
         }
-        public static void ToListControls(Panel selectPanel, List<Note> list)
+
+        /// <Summary>
+        /// Belirtilen paneldeki notları kontrol eder ve listelenir.
+        /// </Summary>
+        /// <param name="selectControl">Notların ekleneceği kontrol.</param>
+        /// <param name="list">Listelenecek notların listesi.</param>
+        public static void ListToControls(Panel selectControl, List<Note> list)
         {
             int i = 0;
-            selectPanel.Controls.Clear();
+            selectControl.Controls.Clear();
             foreach (var item in list.ToList())
             {
                 item.Location = new Point(10, firstNoteY + (i * (item.Size.Height + item.Height / 5)));
                 i++;
-                selectPanel.Controls.Add(item);
+                selectControl.Controls.Add(item);
             }
         }
-        public static void ToListSearch(Panel selectPanel, string searchValue)
+
+        /// <Summary>
+        /// Belirtilen arama değeriyle notlar arasında arama yapar ve sonuçları listeler.
+        /// </Summary>
+        /// <param name="selectPanel">Arama sonuçlarının listeleneceği panel.</param>
+        /// <param name="searchValue">Aranacak değer.</param>
+        public static void Search(Panel selectPanel, string searchValue)
         {
             selectPanel.Controls.Clear();
             List<Note> list = new List<Note>();
@@ -60,29 +84,51 @@ namespace EncryptedNotes.ViewModels
                 }
             else
                 list = ToList();
-            ToListControls(selectPanel, list);
+            ListToControls(selectPanel, list);
         }
+
+        /// <Summary>
+        /// Notların boyutlarını panelin genişliğine göre yeniden boyutlandırır.
+        /// </Summary>
         public static void ResizeNotes()
         {
-            if (notes.Count > 0)
+            if (notes.Count > 0) 
                 foreach (var item in notes)
                 {
                     if (item.Parent != null)
                         item.Width = item.Parent.Width - (35);
                 }
         }
-        public static void AddNotes(string title, Panel selectPanel)
+
+        /// <Summary>
+        /// Yeni bir not ekler ve listeyi günceller.
+        /// </Summary>
+        /// <param name="title">Eklenecek notun başlığı.</param>
+        /// <param name="selectPanel">Notların yerleştirileceği panel.</param>
+        public static void AddNote(string title, Panel selectPanel)
         {
             FileOperation.CreateStickyFile(title);
-            ToCreateList(selectPanel);
+            CreateList(selectPanel);
         }
+
+        /// <Summary>
+        /// Belirtilen notu listeden ve dosya sisteminden siler.
+        /// </Summary>
+        /// <param name="note">Silinecek not nesnesi.</param>
         public static void RemoveNotes(Note note)
         {
             notes.Remove(note);
             DataOperations.RemoveData(note.NoteID);
             FileOperation.DeleteFile(note.NotePath);
-            ToListSearch(note.Parent as Panel, "");
+            Search(note.Parent as Panel, "");
         }
+
+        /// <Summary>
+        /// Görünür durumda olan notların listesini döndürür.
+        /// </Summary>
+        /// <Returns>
+        /// Gizlenmemiş notların listesi döndürülür.
+        /// </Returns>
         public static List<Note> ToList()
         {
             return notes.Where(b => b.isNoteHiden != true).ToList();

@@ -1,6 +1,7 @@
 ﻿using EncryptedNotes.Models.Tools;
 using EncryptedNotes.ViewModels;
 using EncryptedNotes.ViewModels.StyleEvents;
+using StickyNote.ViewModels.StyleEvents;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,22 +19,24 @@ namespace EncryptedNotes.Models.Forms
         public frmStickyNote()
         {
             InitializeComponent();
-            NoteColors.Add(pctColor1);
-            NoteColors.Add(pctColor2);
-            NoteColors.Add(pctColor3);
-            NoteColors.Add(pctColor4);
-            NoteColors.Add(pctColor5);
-            NoteColors.Add(pctColor6);
+            foreach (KYSPictureBox item in pnlColor.Controls)
+                NoteColors.Add(item);
+            FormMovedEvents fME = new FormMovedEvents();
+            fME.SetForm(this, pnlBar);
+            btnClose.MouseEnter += StyleEvent.Object_MouseEnter;
+            btnNoteList.MouseEnter += StyleEvent.Object_MouseEnter;
+            btnClose.MouseLeave += StyleEvent.Object_MouseLeave;
+            btnNoteList.MouseLeave += StyleEvent.Object_MouseLeave;
         }
         private string Id { get; set; }
         private string Title { get; set; }
         private string Path { get; set; }
-        private Color ThisColor {  get; set; }
+        private Color ThisColor { get; set; }
         List<PatternInformation> PatternList { get; set; }
         List<PictureBox> NoteColors = new List<PictureBox>();
         Note ThisNote { get; set; }
 
-        public void SetNote(string _Id, string _Title, string _Path, List<PatternInformation> list,Color _Color, Note note)
+        public void SetNote(string _Id, string _Title, string _Path, List<PatternInformation> list, Color _Color, Note note)
         {
             Id = _Id;
             Title = _Title;
@@ -42,7 +45,7 @@ namespace EncryptedNotes.Models.Forms
             this.Text = Title;
             ThisColor = _Color;
             ThisNote = note;
-            if (StickyTextOperations.PasswordControl(StickyTextOperations.SelectContext("Password", PatternList)))
+            if (StickyTextOperations.ControlPassword(StickyTextOperations.SelectContext("Password", PatternList)))
                 DeActivates();
             else
                 Activates();
@@ -52,16 +55,16 @@ namespace EncryptedNotes.Models.Forms
             isPasswordEnter = true;
             pnlEnterPassword.Visible = false;
             pnlBody.Visible = true;
-            this.Height = 360;
-            pnlBody.Dock = DockStyle.Fill;
+            this.Height = 380;
             pnlBar.BackColor = ThisColor;
-            txtTitle.Texts = StickyTextOperations.SelectContext("Title", PatternList);
-            txtTitle.BorderColor = ThisColor; 
+            txtTitle.BorderColor = ThisColor;
             txtTitle.BorderFocusColor = ThisColor;
+            txtTitle.Texts = StickyTextOperations.SelectContext("Title", PatternList);
             txtBody.Text = StickyTextOperations.SelectContext("Body", PatternList);
             txtKey.Texts = StickyTextOperations.SelectContext("Key", PatternList);
             txtPassword.Texts = StickyTextOperations.SelectContext("Password", PatternList);
             chboxHide.Checked = (StickyTextOperations.SelectContext("Visibility", PatternList) == "True" ? true : false);
+            PctControl();
         }
         private void DeActivates()
         {
@@ -80,14 +83,14 @@ namespace EncryptedNotes.Models.Forms
             {
                 sopen = !sopen;
                 if (sopen)
-                    pnlBar.Height = 200;
+                    pnlBar.Height = pnlSettings.Height + 24;
                 else
                     pnlBar.Height = 24;
             }
         }
         private void btnEnterPassword_Click(object sender, EventArgs e)
         {
-            if (StickyTextOperations.PasswordChecked(txtEnterPassword.Texts, StickyTextOperations.SelectContext("Password", PatternList)))
+            if (StickyTextOperations.CheckPassword(txtEnterPassword.Texts, StickyTextOperations.SelectContext("Password", PatternList)))
                 Activates();
         }
         private void txtTitle_TextChanged(object sender, EventArgs e)
@@ -113,59 +116,29 @@ namespace EncryptedNotes.Models.Forms
         }
         private void pctColor(object sender, EventArgs e)
         {
-            Selected((sender as KYSPictureBox));
-            foreach (KYSPictureBox item in NoteColors.Where(b => b != (sender as KYSPictureBox)).ToList())
-                DeSelected(item);
-                StickyTextOperations.SaveContext("Color", (sender as KYSPictureBox).BackColor.Name, PatternList, Path);
+            ThisColor = (sender as KYSPictureBox).BackColor;
+            StickyTextOperations.SaveContext("Color",ThisColor.Name, PatternList, Path);
             ThisNote.TakeValue();
-            pnlBar.BackColor = (sender as KYSPictureBox).BackColor;
-            txtTitle.BorderColor = (sender as KYSPictureBox).BackColor;
-            txtTitle.BorderFocusColor = (sender as KYSPictureBox).BackColor;
+            PctControl();
+            pnlBar.BackColor = ThisColor;
+            txtTitle.BorderColor = ThisColor;
+            txtTitle.BorderFocusColor = ThisColor;
         }
-        public void Selected(KYSPictureBox pct)
+
+        private void PctControl()
         {
-            pct.BorderSize = 2;
-            pct.BorderColor = Color.White;
-        }
-        public void DeSelected(KYSPictureBox pct)
-        {
-            pct.BorderSize = 1;
-            pct.BorderColor = Color.FromArgb(55, 55, 55);
+            foreach (KYSPictureBox item in NoteColors)
+                item.SelectControl(ThisColor);
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
             RunningWindowsController.CloseOpenedWindow(this);
             this.Close();
         }
-        int mow, mowY, mowX;
-        private void pnlBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            mow = 1;
-            mowX = e.X;
-            mowY = e.Y;
-        }
         private void btnNoteList_Click(object sender, EventArgs e)
         {
             RunningWindowsController.OpenMainWindow();
         }
-        private void btnClose_MouseEnter(object sender, EventArgs e)
-        {
-            StyleEvent.BGColorChange((sender as PictureBox), Color.FromArgb(50, 0, 0, 0));
-        }
-        private void btnClose_MouseLeave(object sender, EventArgs e)
-        {
-            StyleEvent.BGColorChange((sender as PictureBox), (sender as PictureBox).Parent.BackColor);
-        }
-        private void pnlBar_MouseUp(object sender, MouseEventArgs e)
-        {
-            mow = 0;
-        }
-        private void pnlBar_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mow == 1)
-            {
-                SetDesktopLocation(MousePosition.X - mowX, MousePosition.Y - mowY);
-            }
-        }
+
     }
 }

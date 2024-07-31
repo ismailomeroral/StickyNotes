@@ -33,7 +33,10 @@ namespace EncryptedNotes.Models.Tools
                 }
             };
         }
-
+        public void SetDesktop(int mowX, int mowY)
+        {
+            SetDesktopLocation(MousePosition.X - mowX, MousePosition.Y - mowY);
+        }
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);

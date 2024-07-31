@@ -95,8 +95,22 @@ namespace kysToolDemo.KysTools
             get { return isPlaceholder ? "" : textBox1.Text; }
             set
             {
+                // Mevcut metni boşaltmadan önce placeholder'ı kaldır
+                RemovePlaceholder();
                 textBox1.Text = value;
-                SetPlaceholder();
+
+                // Eğer TextBox'a bir değer atanmışsa placeholder'ı kaldır, aksi halde tekrar placeholder'ı ayarla
+                if (string.IsNullOrEmpty(value))
+                {
+                    SetPlaceholder();
+                }
+                else
+                {
+                    isPlaceholder = false;
+                    textBox1.ForeColor = this.ForeColor;
+                    if (isPasswordChar)
+                        textBox1.UseSystemPasswordChar = true;
+                }
             }
         }
 

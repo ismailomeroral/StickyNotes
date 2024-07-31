@@ -207,9 +207,6 @@
             this.pnlBar.Name = "pnlBar";
             this.pnlBar.Size = new System.Drawing.Size(317, 38);
             this.pnlBar.TabIndex = 1;
-            this.pnlBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseDown);
-            this.pnlBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseMove);
-            this.pnlBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseUp);
             // 
             // btnShowCreateNote
             // 
@@ -223,8 +220,6 @@
             this.btnShowCreateNote.TabIndex = 2;
             this.btnShowCreateNote.TabStop = false;
             this.btnShowCreateNote.Click += new System.EventHandler(this.btnShowCreateNote_Click);
-            this.btnShowCreateNote.MouseEnter += new System.EventHandler(this.btnShowCreateNote_MouseEnter);
-            this.btnShowCreateNote.MouseLeave += new System.EventHandler(this.btnShowCreateNote_MouseLeave);
             // 
             // btnClosed
             // 
@@ -238,8 +233,6 @@
             this.btnClosed.TabIndex = 0;
             this.btnClosed.TabStop = false;
             this.btnClosed.Click += new System.EventHandler(this.btnClosed_Click);
-            this.btnClosed.MouseEnter += new System.EventHandler(this.btnShowCreateNote_MouseEnter);
-            this.btnClosed.MouseLeave += new System.EventHandler(this.btnShowCreateNote_MouseLeave);
             // 
             // frmNoteList
             // 

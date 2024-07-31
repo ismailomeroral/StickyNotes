@@ -19,3 +19,24 @@ C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.
 C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.exe
 C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.pdb
 C:\Users\isor5\source\repos\EncryptedNotes\EncryptedNotes\obj\Debug\StickyNote.Properties.Resources.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.exe.config
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.exe.manifest
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.application
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.exe
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\bin\Debug\Sticky Note.pdb
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.csproj.AssemblyReference.cache
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.frmMain.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmNoteList.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmOldStickyNote.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmEnterPassword.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Forms.frmStickyNote.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\kysToolDemo.KysTools.KYSTextBox.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.Models.Note.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\StickyNote.Properties.Resources.resources
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.csproj.GenerateResource.cache
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\EncryptedNotes.csproj.CoreCompileInputs.cache
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.TrustInfo.xml
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.exe.manifest
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.application
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.exe
+D:\My\Works\WindowsApp\EncryptedNotes\EncryptedNotes\obj\Debug\Sticky Note.pdb

@@ -86,16 +86,17 @@
             this.kysPanel1.Controls.Add(this.pnlBar);
             this.kysPanel1.Location = new System.Drawing.Point(2, 2);
             this.kysPanel1.Name = "kysPanel1";
-            this.kysPanel1.Size = new System.Drawing.Size(296, 450);
+            this.kysPanel1.Size = new System.Drawing.Size(302, 450);
             this.kysPanel1.TabIndex = 0;
             // 
             // pnlBody
             // 
             this.pnlBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.pnlBody.Controls.Add(this.kysPanel2);
+            this.pnlBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBody.Location = new System.Drawing.Point(0, 111);
             this.pnlBody.Name = "pnlBody";
-            this.pnlBody.Size = new System.Drawing.Size(296, 339);
+            this.pnlBody.Size = new System.Drawing.Size(302, 339);
             this.pnlBody.TabIndex = 5;
             // 
             // kysPanel2
@@ -111,7 +112,7 @@
             this.kysPanel2.Controls.Add(this.txtTitle);
             this.kysPanel2.Location = new System.Drawing.Point(12, 18);
             this.kysPanel2.Name = "kysPanel2";
-            this.kysPanel2.Size = new System.Drawing.Size(272, 305);
+            this.kysPanel2.Size = new System.Drawing.Size(281, 305);
             this.kysPanel2.TabIndex = 0;
             // 
             // txtBody
@@ -124,15 +125,15 @@
             this.txtBody.Multiline = true;
             this.txtBody.Name = "txtBody";
             this.txtBody.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBody.Size = new System.Drawing.Size(272, 266);
+            this.txtBody.Size = new System.Drawing.Size(281, 266);
             this.txtBody.TabIndex = 3;
             this.txtBody.TextChanged += new System.EventHandler(this.txtBody_TextChanged);
             // 
             // txtTitle
             // 
             this.txtTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.txtTitle.BorderColor = System.Drawing.Color.Gold;
-            this.txtTitle.BorderFocusColor = System.Drawing.Color.Gold;
+            this.txtTitle.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTitle.BorderFocusColor = System.Drawing.Color.Gray;
             this.txtTitle.BorderRadius = 0;
             this.txtTitle.BorderSize = 2;
             this.txtTitle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -146,7 +147,7 @@
             this.txtTitle.PasswordChar = false;
             this.txtTitle.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTitle.PlaceholderText = "Title";
-            this.txtTitle.Size = new System.Drawing.Size(272, 39);
+            this.txtTitle.Size = new System.Drawing.Size(281, 39);
             this.txtTitle.TabIndex = 2;
             this.txtTitle.Texts = "";
             this.txtTitle.UnderlinedStyle = true;
@@ -161,7 +162,7 @@
             this.pnlEnterPassword.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEnterPassword.Location = new System.Drawing.Point(0, 24);
             this.pnlEnterPassword.Name = "pnlEnterPassword";
-            this.pnlEnterPassword.Size = new System.Drawing.Size(296, 87);
+            this.pnlEnterPassword.Size = new System.Drawing.Size(302, 87);
             this.pnlEnterPassword.TabIndex = 4;
             this.pnlEnterPassword.Visible = false;
             // 
@@ -179,7 +180,7 @@
             this.btnEnterPassword.FlatAppearance.BorderSize = 0;
             this.btnEnterPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnterPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEnterPassword.Location = new System.Drawing.Point(223, 32);
+            this.btnEnterPassword.Location = new System.Drawing.Point(232, 32);
             this.btnEnterPassword.Name = "btnEnterPassword";
             this.btnEnterPassword.Size = new System.Drawing.Size(64, 40);
             this.btnEnterPassword.TabIndex = 4;
@@ -194,7 +195,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEnterPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.txtEnterPassword.BorderColor = System.Drawing.Color.Empty;
-            this.txtEnterPassword.BorderFocusColor = System.Drawing.Color.Gold;
+            this.txtEnterPassword.BorderFocusColor = System.Drawing.Color.WhiteSmoke;
             this.txtEnterPassword.BorderRadius = 10;
             this.txtEnterPassword.BorderSize = 2;
             this.txtEnterPassword.Font = new System.Drawing.Font("Yu Gothic", 11.25F);
@@ -207,7 +208,7 @@
             this.txtEnterPassword.PasswordChar = false;
             this.txtEnterPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtEnterPassword.PlaceholderText = "Enter the Password";
-            this.txtEnterPassword.Size = new System.Drawing.Size(199, 39);
+            this.txtEnterPassword.Size = new System.Drawing.Size(208, 39);
             this.txtEnterPassword.TabIndex = 3;
             this.txtEnterPassword.Texts = "";
             this.txtEnterPassword.UnderlinedStyle = true;
@@ -231,29 +232,26 @@
             this.pnlBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBar.Location = new System.Drawing.Point(0, 0);
             this.pnlBar.Name = "pnlBar";
-            this.pnlBar.Size = new System.Drawing.Size(296, 24);
+            this.pnlBar.Size = new System.Drawing.Size(302, 24);
             this.pnlBar.TabIndex = 3;
             this.pnlBar.DoubleClick += new System.EventHandler(this.pnlBar_Click);
-            this.pnlBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseDown);
-            this.pnlBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseMove);
-            this.pnlBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlBar_MouseUp);
             // 
             // btnNoteList
             // 
             this.btnNoteList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNoteList.Image = global::StickyNote.Properties.Resources.list;
-            this.btnNoteList.Location = new System.Drawing.Point(248, 0);
+            this.btnNoteList.Location = new System.Drawing.Point(254, 0);
             this.btnNoteList.Name = "btnNoteList";
             this.btnNoteList.Size = new System.Drawing.Size(24, 24);
             this.btnNoteList.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnNoteList.TabIndex = 6;
             this.btnNoteList.TabStop = false;
             this.btnNoteList.Click += new System.EventHandler(this.btnNoteList_Click);
-            this.btnNoteList.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
-            this.btnNoteList.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             // 
             // pnlSettings
             // 
+            this.pnlSettings.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlSettings.Controls.Add(this.txtPassword);
             this.pnlSettings.Controls.Add(this.txtKey);
             this.pnlSettings.Controls.Add(this.label1);
@@ -261,13 +259,15 @@
             this.pnlSettings.Controls.Add(this.pnlColor);
             this.pnlSettings.Controls.Add(this.lblPassword);
             this.pnlSettings.Controls.Add(this.lblKey);
-            this.pnlSettings.Location = new System.Drawing.Point(0, 30);
+            this.pnlSettings.Location = new System.Drawing.Point(1, 24);
             this.pnlSettings.Name = "pnlSettings";
-            this.pnlSettings.Size = new System.Drawing.Size(300, 170);
+            this.pnlSettings.Size = new System.Drawing.Size(304, 165);
             this.pnlSettings.TabIndex = 5;
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.BackColor = System.Drawing.Color.White;
             this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.txtPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -283,7 +283,7 @@
             this.txtPassword.PasswordChar = false;
             this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPassword.PlaceholderText = "";
-            this.txtPassword.Size = new System.Drawing.Size(162, 31);
+            this.txtPassword.Size = new System.Drawing.Size(165, 31);
             this.txtPassword.TabIndex = 12;
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlinedStyle = true;
@@ -291,6 +291,8 @@
             // 
             // txtKey
             // 
+            this.txtKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKey.BackColor = System.Drawing.Color.White;
             this.txtKey.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.txtKey.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -306,7 +308,7 @@
             this.txtKey.PasswordChar = false;
             this.txtKey.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtKey.PlaceholderText = "";
-            this.txtKey.Size = new System.Drawing.Size(162, 31);
+            this.txtKey.Size = new System.Drawing.Size(165, 31);
             this.txtKey.TabIndex = 12;
             this.txtKey.Texts = "";
             this.txtKey.UnderlinedStyle = true;
@@ -314,8 +316,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(195, 88);
+            this.label1.Location = new System.Drawing.Point(203, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 20);
             this.label1.TabIndex = 11;
@@ -323,8 +326,9 @@
             // 
             // chboxHide
             // 
+            this.chboxHide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chboxHide.AutoSize = true;
-            this.chboxHide.Location = new System.Drawing.Point(242, 88);
+            this.chboxHide.Location = new System.Drawing.Point(245, 88);
             this.chboxHide.MinimumSize = new System.Drawing.Size(45, 22);
             this.chboxHide.Name = "chboxHide";
             this.chboxHide.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
@@ -338,6 +342,8 @@
             // 
             // pnlColor
             // 
+            this.pnlColor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlColor.Controls.Add(this.pctColor6);
             this.pnlColor.Controls.Add(this.pctColor5);
             this.pnlColor.Controls.Add(this.pctColor4);
@@ -346,7 +352,7 @@
             this.pnlColor.Controls.Add(this.pctColor1);
             this.pnlColor.Location = new System.Drawing.Point(0, 116);
             this.pnlColor.Name = "pnlColor";
-            this.pnlColor.Size = new System.Drawing.Size(300, 50);
+            this.pnlColor.Size = new System.Drawing.Size(311, 50);
             this.pnlColor.TabIndex = 9;
             // 
             // pctColor6
@@ -356,7 +362,6 @@
             this.pctColor6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.pctColor6.BorderRadius = 0;
             this.pctColor6.BorderSize = 1;
-            this.pctColor6.Dock = System.Windows.Forms.DockStyle.Left;
             this.pctColor6.Location = new System.Drawing.Point(250, 0);
             this.pctColor6.Name = "pctColor6";
             this.pctColor6.Size = new System.Drawing.Size(50, 50);
@@ -371,7 +376,6 @@
             this.pctColor5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.pctColor5.BorderRadius = 0;
             this.pctColor5.BorderSize = 1;
-            this.pctColor5.Dock = System.Windows.Forms.DockStyle.Left;
             this.pctColor5.Location = new System.Drawing.Point(200, 0);
             this.pctColor5.Name = "pctColor5";
             this.pctColor5.Size = new System.Drawing.Size(50, 50);
@@ -386,7 +390,6 @@
             this.pctColor4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.pctColor4.BorderRadius = 0;
             this.pctColor4.BorderSize = 1;
-            this.pctColor4.Dock = System.Windows.Forms.DockStyle.Left;
             this.pctColor4.Location = new System.Drawing.Point(150, 0);
             this.pctColor4.Name = "pctColor4";
             this.pctColor4.Size = new System.Drawing.Size(50, 50);
@@ -401,7 +404,6 @@
             this.pctColor3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.pctColor3.BorderRadius = 0;
             this.pctColor3.BorderSize = 1;
-            this.pctColor3.Dock = System.Windows.Forms.DockStyle.Left;
             this.pctColor3.Location = new System.Drawing.Point(100, 0);
             this.pctColor3.Name = "pctColor3";
             this.pctColor3.Size = new System.Drawing.Size(50, 50);
@@ -416,7 +418,6 @@
             this.pctColor2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.pctColor2.BorderRadius = 0;
             this.pctColor2.BorderSize = 1;
-            this.pctColor2.Dock = System.Windows.Forms.DockStyle.Left;
             this.pctColor2.Location = new System.Drawing.Point(50, 0);
             this.pctColor2.Name = "pctColor2";
             this.pctColor2.Size = new System.Drawing.Size(50, 50);
@@ -431,7 +432,6 @@
             this.pctColor1.BorderColor = System.Drawing.Color.White;
             this.pctColor1.BorderRadius = 0;
             this.pctColor1.BorderSize = 2;
-            this.pctColor1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pctColor1.Location = new System.Drawing.Point(0, 0);
             this.pctColor1.Name = "pctColor1";
             this.pctColor1.Size = new System.Drawing.Size(50, 50);
@@ -461,21 +461,19 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Image = global::StickyNote.Properties.Resources.miCLose;
-            this.btnClose.Location = new System.Drawing.Point(272, 0);
+            this.btnClose.Location = new System.Drawing.Point(278, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 24);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnClose.TabIndex = 0;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
-            this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             // 
             // frmStickyNote
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(300, 455);
+            this.ClientSize = new System.Drawing.Size(306, 455);
             this.Controls.Add(this.kysPanel1);
             this.Font = new System.Drawing.Font("Yu Gothic", 11.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -506,10 +504,6 @@
         #endregion
 
         private kysToolDemo.KysTools.KYSPanel kysPanel1;
-        private System.Windows.Forms.Panel pnlBody;
-        private kysToolDemo.KysTools.KYSPanel kysPanel2;
-        private System.Windows.Forms.TextBox txtBody;
-        private kysToolDemo.KysTools.KYSTextBox txtTitle;
         private System.Windows.Forms.Panel pnlEnterPassword;
         private kysToolDemo.KysTools.KYSButton btnEnterPassword;
         private kysToolDemo.KysTools.KYSTextBox txtEnterPassword;
@@ -531,5 +525,9 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblKey;
         private System.Windows.Forms.PictureBox btnClose;
+        private System.Windows.Forms.Panel pnlBody;
+        private kysToolDemo.KysTools.KYSPanel kysPanel2;
+        private System.Windows.Forms.TextBox txtBody;
+        private kysToolDemo.KysTools.KYSTextBox txtTitle;
     }
 }

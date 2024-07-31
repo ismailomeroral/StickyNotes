@@ -1,32 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\",
+  "WorkspaceRootPath": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|c:\\users\\isor5\\source\\repos\\encryptednotes\\encryptednotes\\models\\forms\\frmstickynote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|d:\\my\\works\\windowsapp\\encryptednotes\\encryptednotes\\models\\forms\\frmstickynote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\forms\\frmstickynote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|EncryptedNotes||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|c:\\users\\isor5\\source\\repos\\encryptednotes\\encryptednotes\\models\\usercontrols\\note.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\usercontrols\\note.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|c:\\users\\isor5\\source\\repos\\encryptednotes\\encryptednotes\\models\\forms\\frmstickynote.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\forms\\frmstickynote.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|c:\\users\\isor5\\source\\repos\\encryptednotes\\encryptednotes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|c:\\users\\isor5\\source\\repos\\encryptednotes\\encryptednotes\\models\\forms\\frmnotelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\forms\\frmnotelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|c:\\users\\isor5\\source\\repos\\encryptednotes\\encryptednotes\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|d:\\my\\works\\windowsapp\\encryptednotes\\encryptednotes\\models\\forms\\frmenterpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\forms\\frmenterpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,77 +28,25 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmStickyNote.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.cs",
+              "DocumentMoniker": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.cs",
               "RelativeDocumentMoniker": "EncryptedNotes\\Models\\Forms\\frmStickyNote.cs",
-              "ToolTip": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.cs [Design]",
+              "ToolTip": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.cs [Design]",
               "RelativeToolTip": "EncryptedNotes\\Models\\Forms\\frmStickyNote.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T13:05:14.555Z",
+              "WhenOpened": "2024-07-31T13:03:34.625Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Note.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\UserControls\\Note.Designer.cs",
-              "RelativeDocumentMoniker": "EncryptedNotes\\Models\\UserControls\\Note.Designer.cs",
-              "ToolTip": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\UserControls\\Note.Designer.cs",
-              "RelativeToolTip": "EncryptedNotes\\Models\\UserControls\\Note.Designer.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAD4v1cAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T12:51:12.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmStickyNote.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.Designer.cs",
-              "RelativeDocumentMoniker": "EncryptedNotes\\Models\\Forms\\frmStickyNote.Designer.cs",
-              "ToolTip": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.Designer.cs",
-              "RelativeToolTip": "EncryptedNotes\\Models\\Forms\\frmStickyNote.Designer.cs",
-              "ViewState": "AQIAAMEBAAAAAAAAAAD4v88BAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T12:50:52.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EncryptedNotes",
-              "DocumentMoniker": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\EncryptedNotes.csproj",
-              "RelativeDocumentMoniker": "EncryptedNotes\\EncryptedNotes.csproj",
-              "ToolTip": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\EncryptedNotes.csproj",
-              "RelativeToolTip": "EncryptedNotes\\EncryptedNotes.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-16T12:45:33.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmNoteList.cs",
-              "DocumentMoniker": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmNoteList.cs",
-              "RelativeDocumentMoniker": "EncryptedNotes\\Models\\Forms\\frmNoteList.cs",
-              "ToolTip": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmNoteList.cs",
-              "RelativeToolTip": "EncryptedNotes\\Models\\Forms\\frmNoteList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "Title": "frmEnterPassword.cs [Design]",
+              "DocumentMoniker": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs",
+              "RelativeDocumentMoniker": "EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs",
+              "ToolTip": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs [Design]",
+              "RelativeToolTip": "EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T12:42:02.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Program.cs",
-              "RelativeDocumentMoniker": "EncryptedNotes\\Program.cs",
-              "ToolTip": "C:\\Users\\isor5\\source\\repos\\EncryptedNotes\\EncryptedNotes\\Program.cs",
-              "RelativeToolTip": "EncryptedNotes\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T12:15:23.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T13:03:32.469Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

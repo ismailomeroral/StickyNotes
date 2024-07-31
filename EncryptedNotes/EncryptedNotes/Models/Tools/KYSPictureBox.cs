@@ -95,5 +95,22 @@ namespace EncryptedNotes.Models.Tools
             this.SetStyle(ControlStyles.UserPaint, true);
         }
 
+        public void SelectControl(Color selectColor)
+        {
+            if (BackColor == selectColor)
+                Selected();
+            else
+                DeSelected();
+        }
+        public void Selected()
+        {
+            BorderSize = 2;
+            BorderColor = Color.White;
+        }
+        public void DeSelected()
+        {
+            BorderSize = 1;
+            BorderColor = Color.FromArgb(55, 55, 55);
+        }
     }
 }

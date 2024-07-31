@@ -1,9 +1,9 @@
 ﻿using EncryptedNotes.Models.Tools;
 using EncryptedNotes.ViewModels;
 using EncryptedNotes.ViewModels.StyleEvents;
+using StickyNote.ViewModels.StyleEvents;
 using System;
 using System.Drawing;
-using System.Windows.Forms;
 
 namespace EncryptedNotes.Models.Forms
 {
@@ -12,11 +12,20 @@ namespace EncryptedNotes.Models.Forms
         public frmNoteList()
         {
             InitializeComponent();
+            Start();
+        }
+        private void Start()
+        {
             FileOperation.DirectoryStartControl();
             RunningWindowsController.NewOpenedWindow(this);
-            NoteOperations.ToCreateList(pnlNotes);
+            NoteOperations.CreateList(pnlNotes);
+            btnClosed.MouseEnter += StyleEvent.Object_MouseEnter;
+            btnClosed.MouseLeave += StyleEvent.Object_MouseLeave;
+            btnShowCreateNote.MouseEnter += StyleEvent.Object_MouseEnter;
+            btnShowCreateNote.MouseLeave += StyleEvent.Object_MouseLeave;
+            FormMovedEvents fME = new FormMovedEvents();
+            fME.SetForm(this, pnlBar);
         }
-
 
         bool scn = false;
         private void btnShowCreateNote_Click(object sender, EventArgs e)
@@ -30,10 +39,10 @@ namespace EncryptedNotes.Models.Forms
         {
             if (txtCreateNoteName.Texts != "")
             {
-                NoteOperations.AddNotes(txtCreateNoteName.Texts, pnlNotes);
+                NoteOperations.AddNote(txtCreateNoteName.Texts, pnlNotes);
                 pnlCreateNote.Visible = false;
                 txtCreateNoteName.Texts = "";
-                lblCreateNoteName.ForeColor = Color.Black;
+                lblCreateNoteName.ForeColor = Color.WhiteSmoke;
             }
             else
                 lblCreateNoteName.ForeColor = Color.Red;
@@ -41,7 +50,7 @@ namespace EncryptedNotes.Models.Forms
 
         private void txtSearches_TextChanged(object sender, EventArgs e)
         {
-            NoteOperations.ToListSearch(pnlNotes, txtSearches.Texts);
+            NoteOperations.Search(pnlNotes, txtSearches.Texts);
 
         }
         private void btnClosed_Click(object sender, EventArgs e)
@@ -50,40 +59,9 @@ namespace EncryptedNotes.Models.Forms
             RunningWindowsController.IsAllClosedWindows();
         }
 
-        int mow, mowY, mowX;
-
-        private void pnlBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            mow = 1;
-            mowX = e.X;
-            mowY = e.Y;
-        }
-
-        private void btnShowCreateNote_MouseEnter(object sender, EventArgs e)
-        {
-            StyleEvent.BGColorChange((sender as PictureBox), Color.FromArgb(30, 30, 30));
-        }
-
-        private void btnShowCreateNote_MouseLeave(object sender, EventArgs e)
-        {
-            StyleEvent.BGColorChange((sender as PictureBox), (sender as PictureBox).Parent.BackColor);
-        }
-
         private void pnlNotes_SizeChanged(object sender, EventArgs e)
         {
             NoteOperations.ResizeNotes();
-        }
-        private void pnlBar_MouseUp(object sender, MouseEventArgs e)
-        {
-            mow = 0;
-        }
-
-        private void pnlBar_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mow == 1)
-            {
-                SetDesktopLocation(MousePosition.X - mowX, MousePosition.Y - mowY);
-            }
         }
     }
 }

@@ -32,7 +32,7 @@ namespace EncryptedNotes.Models.Forms
             Path = _Path;
             PatternList = list;
             this.Text = Title;
-            if (StickyTextOperations.PasswordControl(StickyTextOperations.SelectContext("Password", PatternList)))
+            if (StickyTextOperations.ControlPassword(StickyTextOperations.SelectContext("Password", PatternList)))
                 DeActivates();
             else
                 Activates();
@@ -102,7 +102,7 @@ namespace EncryptedNotes.Models.Forms
         }
         private void btnEnterPassword_Click(object sender, EventArgs e)
         {
-            if (StickyTextOperations.PasswordChecked(txtEnterPassword.Text, StickyTextOperations.SelectContext("Password", PatternList)))
+            if (StickyTextOperations.CheckPassword(txtEnterPassword.Text, StickyTextOperations.SelectContext("Password", PatternList)))
                 Activates();
         }
     }

@@ -6,9 +6,19 @@ using System.Threading.Tasks;
 
 namespace EncryptedNotes.Models
 {
+    /// <Summary>
+    /// Bir anahtar-değer çiftini temsil eden sınıf.
+    /// </Summary>
     internal class PatternInformation
     {
-        public string key { get; set; } 
+        /// <Summary>
+        /// Anahtar (key) değeri.
+        /// </Summary>
+        public string key { get; set; }
+
+        /// <Summary>
+        /// Değer (value).
+        /// </Summary>
         public string value {  get; set; }
     }
 }

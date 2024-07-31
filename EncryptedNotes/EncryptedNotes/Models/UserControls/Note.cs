@@ -20,7 +20,6 @@ namespace EncryptedNotes.Models
         public Note()
         {
             InitializeComponent();
-
         }
         public string NoteID { get; set; }
         public string NoteTitle { get; set; }
@@ -29,15 +28,18 @@ namespace EncryptedNotes.Models
         public Color NoteColor { get; set; }
 
         private List<PatternInformation> PatternList;
+       
+        frmStickyNote frm = new frmStickyNote();
+        
         public void TakeValue()
         {
-            PatternList = StickyTextOperations.SendPattern(FileOperation.OpenFileAndLoad(NotePath));
+            PatternList = StickyTextOperations.ReturnPattern(FileOperation.OpenFileAndLoad(NotePath));
             isNoteHiden = StickyTextOperations.SelectContext("Visibility", PatternList) == "True" ? true : false;
             NoteColor = Color.FromName(StickyTextOperations.SelectContext("Color", PatternList));
             panel1.BackColor = NoteColor;
             changeNoteNameToolStripMenuItem.Text = lblNoteName.Text;
         }
-        frmStickyNote frm = new frmStickyNote();
+
         private void Note_Click(object sender, EventArgs e)
         {
             if (!RunningWindowsController.WindowControl(frm))
@@ -48,18 +50,7 @@ namespace EncryptedNotes.Models
             frm.Show();
             frm.Focus();
         }
-        private void DeleteNoteCMSItem_Click(object sender, EventArgs e)
-        {
-            string password = StickyTextOperations.SelectContext("Password", PatternList);
-            if (!StickyTextOperations.PasswordControl(password))
-                NoteOperations.RemoveNotes(this);
-            else
-            {
-                frmEnterPassword frm = new frmEnterPassword();
-                frm.setNoteInfo(password, this);
-                frm.ShowDialog();
-            }
-        }
+     
         private void note_MouseEnter(object sender, EventArgs e)
         {
             StyleEvent.BGColorChange(pnlBody, Color.FromArgb(50, 50, 50));
@@ -70,7 +61,18 @@ namespace EncryptedNotes.Models
             StyleEvent.BGColorChange(pnlBody, Color.FromArgb(65, 65, 65));
             btnNoteSettings.Visible = false;
         }
-
+        private void DeleteNoteCMSItem_Click(object sender, EventArgs e)
+        {
+            string password = StickyTextOperations.SelectContext("Password", PatternList);
+            if (!StickyTextOperations.ControlPassword(password))
+                NoteOperations.RemoveNotes(this);
+            else
+            {
+                frmEnterPassword frm = new frmEnterPassword();
+                frm.setNoteInfo(password, this);
+                frm.ShowDialog();
+            }
+        }
         private void changeNoteNameToolStripMenuItem_TextChanged(object sender, EventArgs e)
         {
             DataOperations.UpdateData(NoteID, changeNoteNameToolStripMenuItem.Text);
