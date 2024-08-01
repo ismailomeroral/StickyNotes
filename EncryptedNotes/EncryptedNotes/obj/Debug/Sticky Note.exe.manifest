@@ -66,13 +66,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="EntityModels\Notes.xml" size="1223" writeableType="applicationData">
+  <file name="EntityModels\Notes.xml" size="1454" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YFUDPSiu9LIOcHKTJ1rbUJvkq5FSqGHxMRN1sWy3PZ4=</dsig:DigestValue>
+      <dsig:DigestValue>62qjMb1/mEDAHoIpARk4k2e+1pTSoECX+FN7u8Pndxg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="EntityModels\salt.txt" size="17">

@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\",
+  "WorkspaceRootPath": "D:\\My\\Github\\StickyNotes\\EncryptedNotes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|d:\\my\\works\\windowsapp\\encryptednotes\\encryptednotes\\models\\forms\\frmstickynote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\forms\\frmstickynote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|d:\\my\\works\\windowsapp\\encryptednotes\\encryptednotes\\models\\forms\\frmenterpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\models\\forms\\frmenterpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|d:\\my\\github\\stickynotes\\encryptednotes\\encryptednotes\\viewmodels\\stickytextoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9342DE6-B65E-43E4-8B13-1DA4D4898DE5}|EncryptedNotes\\EncryptedNotes.csproj|solutionrelative:encryptednotes\\viewmodels\\stickytextoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,26 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmStickyNote.cs [Design]",
-              "DocumentMoniker": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.cs",
-              "RelativeDocumentMoniker": "EncryptedNotes\\Models\\Forms\\frmStickyNote.cs",
-              "ToolTip": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmStickyNote.cs [Design]",
-              "RelativeToolTip": "EncryptedNotes\\Models\\Forms\\frmStickyNote.cs [Design]",
+              "Title": "StickyTextOperations.cs",
+              "DocumentMoniker": "D:\\My\\Github\\StickyNotes\\EncryptedNotes\\EncryptedNotes\\ViewModels\\StickyTextOperations.cs",
+              "RelativeDocumentMoniker": "EncryptedNotes\\ViewModels\\StickyTextOperations.cs",
+              "ToolTip": "D:\\My\\Github\\StickyNotes\\EncryptedNotes\\EncryptedNotes\\ViewModels\\StickyTextOperations.cs",
+              "RelativeToolTip": "EncryptedNotes\\ViewModels\\StickyTextOperations.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAIwHkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T13:03:34.625Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmEnterPassword.cs [Design]",
-              "DocumentMoniker": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs",
-              "RelativeDocumentMoniker": "EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs",
-              "ToolTip": "D:\\My\\Works\\WindowsApp\\EncryptedNotes\\EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs [Design]",
-              "RelativeToolTip": "EncryptedNotes\\Models\\Forms\\frmEnterPassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T13:03:32.469Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-01T12:28:39.587Z",
+              "EditorCaption": ""
             }
           ]
         }
